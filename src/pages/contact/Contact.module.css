@@ -1,0 +1,268 @@
+/*
+---------------------------------------------------------------------------------
+
+    HEADERS SETTINGS
+
+---------------------------------------------------------------------------------
+*/
+
+.header {
+    margin-top: 120px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 56px;
+}
+h2 {
+    font-size: 48px;
+}
+h3 {
+    font-size: 38px;
+}
+h4 {
+    font-size: 32px;
+    font-weight: 500;
+}
+p {
+    font-size: 16px;
+}
+
+@media (max-width: 1520px) {
+    .header {
+        margin-top: 96px;
+    }
+    h1 {
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 32px;
+    }
+    h4 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header {
+        margin-top: 96px;
+    }
+    h1 {
+        font-size: 38px;
+    }
+    h2 {
+        font-size: 34px;
+    }
+    h3 {
+        font-size: 26px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        margin-top: 64px;
+    }
+    h1 {
+        font-size: 34px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+@media (max-width: 580px) {
+    .header {
+        margin-top: 64px;
+        text-align: start;
+        padding-left: 32px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        margin-top: 64px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+
+/*
+---------------------------------------------------------------------------------
+
+    CONTACT
+
+---------------------------------------------------------------------------------
+*/
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 120px;
+}
+.contact h2 {
+    margin: 0px 0px 8px 0px;
+}
+
+.contactText {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+.contactText p {
+    margin: 0px;
+}
+.contactText p:nth-child(1) {
+    font-weight: 500;
+}
+
+.contactNumbers {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.contactImages {
+    display: flex;
+    gap: 32px;
+}
+.contactImg {
+    background-color: #c7c7c7;
+    height: 450px;
+    width: 464px;
+}
+
+@media (max-width: 1520px) {
+    .contact {
+        margin-top: 96px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .contactImg {
+        height: 326px;
+        width: 336px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact h2 {
+        margin: 0px 0px 4px 0px;
+    }
+    .contactNumbers {
+        gap: 16px;
+    }
+    .contactImg {
+        height: 500px;
+        width: 516px;
+    }
+    .contactImages {
+        flex-direction: column;
+    }
+    .contactImages {
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 580px) {
+    .contact {
+        margin-top: 48px;
+        gap: 16px;
+        padding: 0px 32px;
+        align-items: start;
+    }
+    .contactNumbers {
+        flex-direction: column;
+        align-items: start;
+        margin-bottom: 8px;
+    }
+    .contactImg {
+        height: 403px;
+        width: 416px;
+    }
+    .contactImages {
+        gap: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contactImg {
+        height: 316px;
+        width: 326px;
+    }
+    .contact > .contactText:nth-of-type(1),
+    .contact > .contactText:nth-of-type(2) {
+        flex-direction: column;
+        gap: 4px;
+    }
+}
+@media (max-width: 390px) {
+    .contact {
+        padding: 0px 24px;
+    }
+    .contactImg {
+        height: 264px;
+        width: 272px;
+    }
+    .contactText p:first-of-type {
+        white-space: nowrap; /* Nie pozwala na zawijanie */
+    }
+
+    .contactText p:last-of-type {
+        white-space: normal; /* Tekst może się zawijać */
+        word-wrap: break-word; /* Upewnia się, że dłuższe wyrazy również się łamią */
+    }
+    .contactText .noWrap {
+        white-space: nowrap !important;
+    }
+}

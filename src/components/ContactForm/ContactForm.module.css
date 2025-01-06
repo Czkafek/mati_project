@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.ContactForm {
+    text-align: center;
+    padding: 0px 32px;
+    margin-top: 120px;
+}
+
+.form {
+    margin: 0 auto;
+    display: grid;
+    max-width: 500px;
+    gap: 16px;
+}
+
+.submitButton {
+    font-size: 20px;
+    color: var(--colorTlo);
+    background-color: var(--colorDod);
+    border: none;
+    padding: 12px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 6px;
+    margin: 8px 0px 0px 0px;
+}
+.submitButton:hover {
+    background-color: #4884c5;
+}
+.submitButton:active {
+    background-color: #5e98d6;
+}
+.arrow {
+    margin-top: 2px;
+    height:12px !important;
+}
+
+input {
+    color: var(--colorTekst) !important;
+    font-family: "Montserrat" !important;
+    height: 32px;
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    outline-color: rgba(0, 0, 0, 0.1);
+    white-space: wrap;
+}
+input::placeholder {
+    color: var(--formText);
+    opacity: 0.5;
+}
+
+textarea {
+    color: var(--colorTekst) !important;
+    font-family: "Montserrat" !important;
+    min-height: 200px;
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    outline-color: rgba(0, 0, 0, 0.1);
+    resize: none;
+    overflow: hidden;
+    line-height: 2;
+}
+textarea::placeholder {
+    color: var(--formText);
+    opacity: 0.5;
+}
+
+.errorMes {
+    margin: 8px 0px 0px 0px;
+    color: #f14343;
+}
+
+.successMes {
+    margin: 8px 0px 0px 0px;
+    color: var(--colorDod);
+}
+
+@media (max-width: 1520px) {
+    .ContactForm {
+        margin-top: 96px;
+    }
+}
+@media (max-width: 1024px) {
+    .ContactForm {
+        margin-top: 96px;
+    }
+}
+@media (max-width: 768px) {
+    .ContactForm {
+        margin-top: 64px;
+    }
+}
+@media (max-width: 580px) {
+    .ContactForm {
+        margin-top: 64px;
+    }
+    .ContactForm h2 {
+        text-align: start;
+    }
+}
+@media (max-width: 480px) {
+    .ContactForm {
+        margin-top: 64px;
+    }
+    textarea {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    input {
+        font-size: 14px;
+        padding: 4px 16px;
+    }
+}

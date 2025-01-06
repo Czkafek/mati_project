@@ -1,0 +1,17 @@
+.primaryButton {
+    background-color: #2E6AA9;
+    color: var(--colorTlo);
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 40px;
+    border-radius: 8px;
+    transition: background-color, 0.2s;
+}
+
+.primaryButton:hover {
+    background-color: #4884c5;
+}
+.primaryButton:active {
+    background-color: #5e98d6;
+}

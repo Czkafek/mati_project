@@ -1,0 +1,118 @@
+.footerContainer {
+    margin-top: 120px;
+    color: var(--colorTlo);
+}
+
+.contactText {
+    display: flex;
+    gap: 8px;
+}
+.contactText p {
+    margin: 0px;
+}
+.contactText p:nth-child(1) {
+    font-weight: 400;
+}
+p {
+    font-weight: 300;
+}
+
+.footerSection {
+    display: grid;
+    justify-content: start;
+    gap: 16px;
+    align-self: start;
+    white-space: normal;
+    max-width: 100%;
+}
+.footerSection hr {
+    width: 121px;
+    height: 0px;
+    margin: 0;
+}
+.footerSection p {
+    cursor: default;
+    margin: 0px;
+    line-height: 150%;
+}
+
+.footerSection:nth-child(1) p:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.footer {
+    box-sizing: border-box;
+    display: inline-grid;
+    grid-template-columns: max-content minmax(auto, 1fr);
+    gap: 80px;
+    width: 100%;
+    background-color: var(--colorTekst);
+    padding: 48px 304px 32px 304px;
+}
+
+h5 {
+    cursor: default;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0px;
+}
+
+.copyrights {
+    background-color: #0C0E21;
+    height: 37px;
+    display: grid;
+    justify-content: center;
+    align-items: center;    
+}
+.copyrights p {
+    margin: 0px;
+}
+
+.contactText p:first-of-type {
+    white-space: nowrap; /* Nie pozwala na zawijanie */
+}
+
+.footerSection .contactText p:last-of-type {
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;padding-right: 48px;
+}
+.contactText .noWrap {
+    white-space: nowrap;
+}
+
+@media (max-width: 1520px) {
+    .footer {
+        padding: 48px 0px 32px 224px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer {
+        padding: 48px 0px 32px 96px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 48px 0px 32px 64px;
+    }
+}
+
+@media (max-width: 580px) {
+    .footer {
+        grid-template-columns: minmax(auto, 1fr);
+        padding: 48px 0px 32px 64px;
+        gap: 48px;
+    }
+}
+
+@media (max-width: 480px) {
+    
+}
+@media (max-width: 390px) {
+    .footer {
+        padding: 48px 0px 32px 32px;
+    }
+}
