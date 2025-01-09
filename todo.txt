@@ -1,0 +1,10 @@
+- dokończ slider - przejrzyj dokumentacje swipera i znajdź rozwiązanie na to, żeby stworzyć custom nawigację strzałkami, a następnie stwórz go responsywnego
+- na 768px sekcja "Poznaj nas!" oraz "Tu nas znajdziesz" mają 96px zamiast 64px margin top
+- na 580px dosłownie każda sekcja ma inny margin top, trzeba zmienić wszystkie na 48px lub 64px
+- na 480px dosłownie każda sekcja ma inny margin top, trzeba zmienić wszystkie na 48px lub 64px
+- na 390px dosłownie każda sekcja ma inny margin top, trzeba zmienic wszystkie na 48px lub 32px
+- na mniejszych ekranach da się przewijać stronę w lewo prawo, zrób tak żeby się nie dało - prawdopodobnie wystarczy użyć overflow: hidden
+- skończ menu - kiedy się w nie wejdzie da się je scrollować ale w tym samym momencien nie scrolluje się strona
+- sprawdź w figmie rozwiązanie, żeby na mniejszych ekranach tekst i przycisk z hero znajdował się pod zdjęciem, a nie na zdjęciu
+- napisz do Mateusza co z tymi grafikami oraz dostępem do domeny
+

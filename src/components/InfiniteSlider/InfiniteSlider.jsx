@@ -14,9 +14,9 @@ export default function InfiniteSlider() {
     useEffect(() => {
         const updateGradientWidth = () => {
             if (window.innerWidth < 768)
-                setGradientWidth(100)
+                setGradientWidth(50)
             else
-                setGradientWidth(150)
+                setGradientWidth(100)
         }
 
         updateGradientWidth();
