@@ -109,7 +109,7 @@ textarea::placeholder {
 }
 @media (max-width: 480px) {
     .ContactForm {
-        margin-top: 64px;
+        margin-top: 48px;
     }
     textarea {
         font-size: 14px;
