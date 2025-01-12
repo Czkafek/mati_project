@@ -76,26 +76,22 @@ function About() {
                 </h2>
                 {/*<Link to="/kontakt">
                     <button className={styles.primaryButton}>Skontaktuj się</button>
-                </Link>*/}
+                </Link>*/}  
             </div>
             <Swiper className={styles.slider} loop={true}
-                modules={[Navigation, Pagination, Scrollbar, A11y]}
-                navigation
-                pagination={{ clickable: true }}
+                modules={[Navigation, Pagination, A11y]}
                 spaceBetween={32}
                 slidesPerView={3}
-                centeredSlides={true}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}>
+                centeredSlides={true}>
 
                 { reviews.map((review) => (
                     <SwiperSlide key={review.id}>
                         <TestimonialCard  review={review} />
                     </SwiperSlide>
                 ))}
-        
+                <SwiperNavButtons/>
             </Swiper>
-            <SwiperNavButtons/>
+            
         </div>
     </>
 };
