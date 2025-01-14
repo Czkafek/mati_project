@@ -10,9 +10,6 @@ import TestimonialCard from './TestimonialCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
 import { SwiperNavButtons } from './SwiperNavButtons';
 
 function About() {
@@ -80,10 +77,9 @@ function About() {
             </div>
             <Swiper className={styles.slider} loop={true}
                 modules={[Navigation, Pagination, A11y]}
-                spaceBetween={32}
                 slidesPerView={3}
-                centeredSlides={true}>
-
+                spaceBetween={32}
+                >
                 { reviews.map((review) => (
                     <SwiperSlide key={review.id}>
                         <TestimonialCard  review={review} />

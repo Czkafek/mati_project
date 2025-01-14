@@ -9,6 +9,7 @@
 .header {
     margin-top: 120px;
     text-align: center;
+    margin-bottom: 0px;
 }
 
 h1 {
@@ -134,6 +135,12 @@ p {
     }
 }
 
+@media (max-width: 390px) {
+    .header {
+        padding-left: 24px;
+    }
+}
+
 /*
 ---------------------------------------------------------------------------------
 
@@ -196,6 +203,9 @@ p {
 }
 
 @media (max-width: 768px) {
+    .contact {
+        margin-top: 64px;
+    }
     .contact h2 {
         margin: 0px 0px 4px 0px;
     }
@@ -216,7 +226,7 @@ p {
 
 @media (max-width: 580px) {
     .contact {
-        margin-top: 48px;
+        margin-top: 64px;
         gap: 16px;
         padding: 0px 32px;
         align-items: start;
@@ -236,6 +246,9 @@ p {
 }
 
 @media (max-width: 480px) {
+    .contact {
+        margin-top: 48px;
+    }
     .contactImg {
         height: 316px;
         width: 326px;

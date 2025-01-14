@@ -362,7 +362,7 @@ p {
     }
     .productsGrid {
         grid-template-columns: 1fr 1fr;
-        width: 398px;
+        width: 422px;
         gap: 16px;
     }
 }
@@ -382,8 +382,8 @@ p {
     }
     .productsGrid {
         grid-template-columns: 1fr 1fr;
-        width: 358px;
-        gap: 16px;
+        width: 354px;
+        gap: 12px;
     }
 }
 @media (max-width: 390px) {
@@ -392,8 +392,8 @@ p {
     }
     .productsGrid {
         grid-template-columns: 1fr 1fr;
-        width: 288px;
-        gap: 16px;
+        width: 280px;
+        gap: 8px;
     }
 }
 

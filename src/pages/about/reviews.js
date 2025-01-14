@@ -2,23 +2,23 @@ export const reviews = [
     {
         id: 1,
         image: "/src/assets/man_pfp.jpg",
-        name: "Mateusz Kowalski",
+        name: "Coo Murny",
         rating: 50,
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        text: "Polecam serdecznie! Zawsze wszystko kompleksowo wyjaśnione, załatwione na czas. Szczególnie pan Mateusz który zawsze jest otwarty, serdeczny i uśmiechnięty. 10/10! ❤️❤️❤️🥳"
     },
     {
         id: 2,
         image: "/src/assets/woman_pfp.jpg",
-        name: "Anna Nowak",
+        name: "Andrea Rzasa",
         rating: 40,
-        text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        text: "Wszystkie ubezpieczenia wykupuję w tej firmie. Doceniam za ekspresową reakcję i obsługę. Zdarzyło mi się nawet prosić o pomoc w uzyskaniu zwrotu ubezpieczenia z powodu epidemii - zero problemu, wniosek został przygotowany przez pracownika firmy gotowy do podpisu i wysłania. Zwrot na koncie po paru tygodniach. Polecam każdemu nieubezpieczonemu."
     },
     {
         id: 3,
         image: "/src/assets/man_pfp.jpg",
-        name: "Kamil Zieliński",
+        name: "Konrad Ziółkowski",
         rating: 50,
-        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        text: "Od kilku lat ubezpieczam tam motor i auto, bardzo sympatyczna obsługa. Gorąco polecam 😎"
     },
     {
         id: 4,
