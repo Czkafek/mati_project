@@ -126,6 +126,7 @@ p {
     display: block;
     object-fit: cover;
     object-position: center;
+    filter: brightness(80%) saturate(110%);
 }
 .heroContainer {
     position: relative;
@@ -326,12 +327,12 @@ p {
 
 @media (max-width: 480px) {
     .hook {
-        margin-top: 96px;
+        margin-top: 48px;
     }
 }
 @media (max-width: 390px) {
     .hook {
-        margin-top: 96px;
+        margin-top: 48px;
     }
 }
 
@@ -414,16 +415,30 @@ p {
     .person {
         grid-template-columns: 1fr;
         grid-template-rows: 120px 1fr;
+        margin-bottom: 32px;
     }
 }
 
 @media (max-width: 580px) {
+    .teamContainer {
+        margin-top: 64px;
+    }
     .person .img {
         height: 100px;
         width: 100px;
     }
     .person {
         grid-template-rows: 100px 1fr;
+    }
+}
+@media (max-width: 480px) {
+    .teamContainer {
+        margin-top: 48px;
+    }
+}
+@media (max-width: 390px) {
+    .teamContainer {
+        margin-top: 48px;
     }
 }
 
@@ -504,10 +519,15 @@ p {
 }
 
 @media (max-width: 580px) {
-
+    .interludeContainer {
+        margin-top: 64px;
+    }
 }
 
 @media (max-width: 480px) {
+    .interludeContainer {
+        margin-top: 48px;
+    }
     .interludeContainer img {
         max-height: 250px; /* Dla telefonów */
     }
@@ -646,11 +666,15 @@ p {
 }
 
 @media (max-width: 580px) {
-
+    .testimonialContainer {
+        margin-top: 64px;
+    }
 }
 
 @media (max-width: 480px) {
-    
+    .testimonialContainer {
+        margin-top: 48px;
+    }
 }
 
 

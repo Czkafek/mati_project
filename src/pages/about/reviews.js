@@ -10,7 +10,7 @@ export const reviews = [
         id: 2,
         image: "/src/assets/woman_pfp.jpg",
         name: "Andrea Rzasa",
-        rating: 40,
+        rating: 50,
         text: "Wszystkie ubezpieczenia wykupuję w tej firmie. Doceniam za ekspresową reakcję i obsługę. Zdarzyło mi się nawet prosić o pomoc w uzyskaniu zwrotu ubezpieczenia z powodu epidemii - zero problemu, wniosek został przygotowany przez pracownika firmy gotowy do podpisu i wysłania. Zwrot na koncie po paru tygodniach. Polecam każdemu nieubezpieczonemu."
     },
     {
@@ -23,57 +23,141 @@ export const reviews = [
     {
         id: 4,
         image: "/src/assets/woman_pfp.jpg",
-        name: "Julia Wiśniewska",
+        name: "Katarzyna Banaszek",
         rating: 50,
-        text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        text: "Wszystkie możliwe polisy załatwiam z MATI Ubezpieczenia, zarówno samochodów, mieszkania, pracy czy nawet wakacje. Zawsze sprawnie, konkretnie, w dobrej cenie. Miła obsługa, można liczyć na pomoc w każdej chwili 🙂 Korzystamy z tatą od lat, nigdy nie byliśmy zawiedzeni i będziemy korzystać pewnie zawsze. Mimo przeprowadzki do innego województwa nadal polisy zawieram poprzez MATI Ubezpieczenia (telefonicznie bądź mailowo). Polecam każdemu!"
     },
     {
         id: 5,
         image: "/src/assets/man_pfp.jpg",
-        name: "Tomasz Lewandowski",
-        rating: 40,
-        text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+        name: "Mateusz Ziąbka",
+        rating: 50,
+        text: "Ubezpieczamy od lat i wszystko zawsze sprawnie, na czas i w dobrych cenach. Polecam!"
     },
     {
         id: 6,
         image: "/src/assets/woman_pfp.jpg",
-        name: "Natalia Kamińska",
+        name: "pbin",
         rating: 50,
-        text: "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+        text: "Polecam! Świetna obsługa."
     },
     {
         id: 7,
         image: "/src/assets/man_pfp.jpg",
-        name: "Michał Dąbrowski",
+        name: "Alison Hell T.M.P.",
         rating: 50,
-        text: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos."
+        text: "Pełen profesjonalizm, zdecydowanie polecam. Nie ma rzeczy niemożliwych w tym miejscu :)"
     },
     {
         id: 8,
         image: "/src/assets/woman_pfp.jpg",
-        name: "Aleksandra Kaczmarek",
-        rating: 40,
-        text: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit."
+        name: "Damian Gałczyński",
+        rating: 50,
+        text: "Polecam ! Fachowa pomoc w ubezpieczeniu pojazdu ! Super sprawny kontakt :)"
     },
     {
         id: 9,
         image: "/src/assets/man_pfp.jpg",
-        name: "Łukasz Pawlak",
+        name: "Hanna „Mała Mi” J",
         rating: 50,
-        text: "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur."
+        text: "Pełen profesjonalizm, miła obsługa. Polecam z czystym sumieniem"
     },
     {
         id: 10,
         image: "/src/assets/woman_pfp.jpg",
-        name: "Katarzyna Woźniak",
+        name: "Kamil Lis",
         rating: 50,
-        text: "Vel illum qui dolorem eum fugiat quo voluptas nulla pariatur, at vero eos et accusamus et iusto odio dignissimos ducimus."
+        text: "Profesjonalna firma ubezpieczeniowa którą z czystym sumieniem mogę polecić."
     },
     {
         id: 11,
         image: "/src/assets/man_pfp.jpg",
-        name: "Patryk Szymański",
-        rating: 40,
-        text: "Et harum quidem rerum facilis est et expedita distinctio, nam libero tempore, cum soluta nobis est eligendi optio."
+        name: "Henryk Brogowski",
+        rating: 50,
+        text: "Zirytował mnie tylko Pan z Rudy Bugaj."
+    },
+    {
+        id: 12,
+        image: "/src/assets/man_pfp.jpg",
+        name: "Szymek Szymek",
+        rating: 50,
+        text: "Szybko , sprawnie i bez najmniejszych problemów 👍"
+    },
+    {
+        id: 13,
+        image: "/src/assets/man_pfp.jpg",
+        name: "Andrzej Papis",
+        rating: 50,
+        text: "Oniemiałem (!) Cóż za kompetencja... Jak zawsze, co roku, na wszystko...😊👍"
+    },
+    {
+        id: 14,
+        image: "/src/assets/man_pfp.jpg",
+        name: "Mateusz Jędrzejczak",
+        rating: 50,
+        text: "Polecam, sympatyczna obsługa"
+    },
+    {
+        id: 15,
+        image: "/src/assets/man_pfp.jpg",
+        name: "Dariusz Paklesa",
+        rating: 50,
+        text: "Miła sympatyczna obsługa"
+    },
+    {
+        id: 16,
+        image: "/src/assets/man_pfp.jpg",
+        name: "Acid Nija",
+        rating: 50,
+        text: "Serdecznie polecam!"
+    },
+    {
+        id: 17,
+        image: "/src/assets/man_pfp.jpg",
+        name: "Kamil Krzemiński",
+        rating: 50,
+        text: "Pamiętają za Ciebie o Twoim ubezpieczeniu😉"
+    },
+    {
+        id: 18,
+        image: "/src/assets/man_pfp.jpg",
+        name: "Szymon Grzeliński",
+        rating: 50,
+        text: "Polecam"
+    },
+    {
+        id: 19,
+        image: "/src/assets/man_pfp.jpg",
+        name: "Aureliusz Błaszczyk",
+        rating: 50,
+        text: "Polecam pełny pofesionalizm"
+    },
+    {
+        id: 20,
+        image: "/src/assets/man_pfp.jpg",
+        name: "Maria Raf",
+        rating: 50,
+        text: "Polecam :)"
+    },
+    {
+        id: 21,
+        image: "/src/assets/man_pfp.jpg",
+        name: "Abid Arari",
+        rating: 50,
+        text: "Miła obsługa"
+    },
+    {
+        id: 22,
+        image: "/src/assets/man_pfp.jpg",
+        name: "Tomasz Wozniak",
+        rating: 50,
+        text: "Polecam!!!"
+    },
+    {
+        id: 23,
+        image: "/src/assets/man_pfp.jpg",
+        name: "Recep Sönmez",
+        rating: 50,
+        text: "Świetne wsparcie i obsługa w zakresie ubezpieczenia :) Kupiłem ubezpieczenie samochodu, a Mateusz był bardzo pomocny podczas całego procesu, ponieważ było to moje pierwsze ubezpieczenie :) Polecam!"
     }
 ]

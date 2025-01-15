@@ -85,10 +85,12 @@ function HomePage() {
                 <div className={styles.hookContent}>
                     <h2>Poznaj nas!</h2>
                     <p>W MATI wierzymy, że doświadczenie, indywidualne podejście i rodzinna atmosfera stanowią fundament solidnych relacji z naszymi klientami. Przez ponad dwie dekady angażujemy się w zapewnianie kompleksowej ochrony dla naszych klientów, co sprawia, że jesteśmy partnerem, któremu możesz zaufać.</p>
-                    <p className={styles.hookDetails}>
-                        Szczegóły
-                        <img src="/src/assets/Products/arrow.png" className={styles.arrow} />    
-                    </p>
+                    <Link to="/onas" style={{ textDecoration: 'none' }}>
+                        <p className={styles.hookDetails}>
+                            Szczegóły
+                            <img src="/src/assets/Products/arrow.png" className={styles.arrow} />    
+                        </p>
+                    </Link>
                 </div>
         </div>
         <ContactForm/>
