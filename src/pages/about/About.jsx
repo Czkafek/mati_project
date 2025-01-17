@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 import styles from './About.module.css';
 import happy_family_img from '../../assets/happy_family.jpg';
 import mati_wallpaper from '../../assets/mati_fb_wallpaper3.jpg';
-import arrow1 from '../../assets/arrow1.png';
-import arrow2 from '../../assets/arrow2.png';
 import { reviews } from './reviews';
 import TestimonialCard from './TestimonialCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import { SwiperNavButtons } from './SwiperNavButtons';
 
 function About() {
@@ -66,19 +66,32 @@ function About() {
         </div>
         <div className={styles.testimonialContainer}>
             <div className={styles.sliderContent}>
-                <h3>Nie wierzysz nam na słowo?</h3>
-                <h2>
-                    <span className={styles.breakLine}>- sprawdź, co mówią </span>
-                    <span className={styles.noWrap}>nasi klienci</span>
-                </h2>
+                <div className={styles.childSliderContent}>
+                    <h3>Nie wierzysz nam na słowo?</h3>
+                    <h2>
+                        <span className={styles.breakLine}>- sprawdź, co mówią </span>
+                        <span className={styles.noWrap}>nasi klienci</span>
+                    </h2>
+                </div>
                 {/*<Link to="/kontakt">
                     <button className={styles.primaryButton}>Skontaktuj się</button>
                 </Link>*/}  
             </div>
-            <Swiper className={styles.slider} loop={true}
-                modules={[Navigation, Pagination, A11y]}
-                slidesPerView={3}
-                spaceBetween={32}
+            <Swiper className={styles.slider}
+                loop={true}
+                modules={[Navigation]}
+                breakpoints={{
+                    // Default (smallest screens) - 1 slide
+                    0: {
+                      slidesPerView: 1,
+                    },
+                    // On screens wider than 1520px - 3 slides
+                    1520: {
+                      slidesPerView: 3,
+                    },
+                  }}
+                spaceBetween={0}
+                navigation={false}
                 >
                 { reviews.map((review) => (
                     <SwiperSlide key={review.id}>
@@ -87,7 +100,6 @@ function About() {
                 ))}
                 <SwiperNavButtons/>
             </Swiper>
-            
         </div>
     </>
 };

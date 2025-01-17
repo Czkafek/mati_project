@@ -25,7 +25,7 @@ export const reviews = [
         image: "/src/assets/woman_pfp.jpg",
         name: "Katarzyna Banaszek",
         rating: 50,
-        text: "Wszystkie możliwe polisy załatwiam z MATI Ubezpieczenia, zarówno samochodów, mieszkania, pracy czy nawet wakacje. Zawsze sprawnie, konkretnie, w dobrej cenie. Miła obsługa, można liczyć na pomoc w każdej chwili 🙂 Korzystamy z tatą od lat, nigdy nie byliśmy zawiedzeni i będziemy korzystać pewnie zawsze. Mimo przeprowadzki do innego województwa nadal polisy zawieram poprzez MATI Ubezpieczenia (telefonicznie bądź mailowo). Polecam każdemu!"
+        text: "Wszystkie możliwe polisy załatwiam z MATI Ubezpieczenia, zarówno samochodów, mieszkania, pracy czy nawet wakacje. Zawsze sprawnie, konkretnie, w dobrej cenie. Miła obsługa, można liczyć na pomoc w każdej chwili 🙂 Korzystamy z tatą od lat, nigdy nie byliśmy zawiedzeni i będziemy korzystać pewnie zawsze."
     },
     {
         id: 5,

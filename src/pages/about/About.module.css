@@ -550,6 +550,8 @@ p {
     z-index: 999;
     margin-bottom: 16px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 .sliderContent h3 {
     font-weight: 500;
@@ -562,6 +564,11 @@ p {
     margin: 0px 0px 24px 0px;
     margin-bottom: 0px;
 }
+.slider {
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
 /*.breakLine::after {
     content: "\a";
@@ -569,12 +576,6 @@ p {
 }*/
 .noWrap {
     white-space: nowrap !important;
-}
-
-.slider {
-    width: 100%;
-    height: auto;
-    padding: 24px 12px !important;
 }
 
 .navigationButtons {
@@ -598,20 +599,18 @@ p {
 .review {
     display: grid;
     grid-template-columns: max-content;
-    justify-self: start;
+    justify-content: center;
     gap: 16px;
-    padding: 24px;
     /*background-color: #FFF;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
     border-radius: 8px;*/
-    width: 500px;
+    width: 100%;
 }
 .review .head {
     height: 50px;
     display: flex;
     align-items: center;
     gap: 16px;
-    max-width: 500px;
 }
 .review .head img {
     height: 100%;
@@ -634,10 +633,36 @@ p {
     font-size: 15px;
     font-weight: 400;
 }
+@media (max-width: 1700px) {
+    .review .text {
+        max-width: 450px;
+    }
+}
 
 @media (max-width: 1520px) {
+    .sliderContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .childSliderContent {
+        display: inline-block;
+        text-align: left;
+    }
+    .navigationButtons {
+        max-width: 500px;
+        justify-content: left !important;
+    }
+    .slider {
+        margin-top: 32px;
+        max-width: 660px;
+    }
     .review {
+        justify-content: start;
         gap: 16px;
+    }
+    .review .text {
+        max-width: 660px !important;
     }
     .testimonialContainer {
         margin-top: 96px;
@@ -651,6 +676,13 @@ p {
 }
 
 @media (max-width: 1024px) {
+    .slider {
+        margin-top: 32px;
+        max-width: 561px;
+    }
+    .review .text {
+        max-width: 561px !important;
+    }
     .sliderContent h3,
     .sliderContent h2,
     .sliderContent .primaryButton {
@@ -660,18 +692,52 @@ p {
 }
 
 @media (max-width: 768px) {
+    .slider {
+        margin-top: 32px;
+        max-width: 495px;
+    }
+    .review .text {
+        max-width: 495px !important;
+    }
     .sliderContent h2 {
         margin-bottom: 16px;
     }
 }
 
 @media (max-width: 580px) {
+    .slider {
+        margin-top: 32px;
+        max-width: 420px;
+    }
+    .review .text {
+        max-width: 420px !important;
+    }
     .testimonialContainer {
         margin-top: 64px;
     }
 }
 
 @media (max-width: 480px) {
+    .slider {
+        margin-top: 32px;
+        max-width: 342px;
+    }
+    .review .text {
+        max-width: 342px !important;
+    }
+    .testimonialContainer {
+        margin-top: 48px;
+    }
+}
+
+@media (max-width: 390px) {
+    .slider {
+        margin-top: 32px;
+        max-width: 272px;
+    }
+    .review .text {
+        max-width: 272px !important;
+    }
     .testimonialContainer {
         margin-top: 48px;
     }
