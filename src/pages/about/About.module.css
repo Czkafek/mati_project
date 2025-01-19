@@ -548,7 +548,6 @@ p {
 
 .sliderContent {
     z-index: 999;
-    margin-bottom: 16px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -584,13 +583,18 @@ p {
     justify-content: center;
 }
 .arrowButton {
+    padding: 0px;
     background: none;
     border: none;
-    border-radius: 100px;
     cursor: pointer;
     z-index: 999;
-    transition: color 0.2s;
-    top: 45%;
+    transition: opacity 0.2s;
+}
+.arrowButton:hover {
+    opacity: 0.7;
+}
+.arrowButton:active {
+    opacity: 0.5;
 }
 .arrowButton img {
     height: 40px;
@@ -632,6 +636,9 @@ p {
     margin: 0px;
     font-size: 15px;
     font-weight: 400;
+}
+.navigationButtons {
+    margin-top: 32px;
 }
 @media (max-width: 1700px) {
     .review .text {
@@ -689,6 +696,15 @@ p {
         margin-left: 32px;
         margin-right: 32px;
     }
+    .navigationButtons {
+        margin-top: 32px;
+    }
+    .navigationButtons {
+        gap: 24px;
+    }
+    .arrowButton img {
+        height: 32px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -715,6 +731,9 @@ p {
     .testimonialContainer {
         margin-top: 64px;
     }
+    .navigationButtons {
+        margin-top: 24px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -728,27 +747,56 @@ p {
     .testimonialContainer {
         margin-top: 48px;
     }
+    .navigationButtons {
+        margin-top: 16px;
+    }
 }
 
 @media (max-width: 390px) {
     .slider {
-        margin-top: 32px;
+        margin-top: 16px;
         max-width: 272px;
     }
     .review .text {
         max-width: 272px !important;
     }
+    .head {
+        height: 40px !important;
+    }
     .testimonialContainer {
         margin-top: 48px;
+    }
+    .navigationButtons {
+        margin-top: 16px;
+    }
+    .navigationButtons {
+        gap: 24px;
+    }
+    .arrowButton img {
+        height: 32px;
+    }
+}
+@media (max-width: 330px) {
+    .slider {
+        margin-top: 16px;
+        max-width: 256px;
+    }
+    .review .text {
+        max-width: 256px !important;
+    }
+    .testimonialContainer {
+        margin-top: 48px;
+    }
+    .navigationButtons {
+        margin-top: 16px;
+    }
+    .navigationButtons {
+        gap: 24px;
+    }
+    .arrowButton img {
+        height: 32px;
     }
 }
 
 
-.navigationButtons {
-    margin-top: 16px;
-}
 
-Swiper {
-    display: flex;
-    align-items: center;
-}
