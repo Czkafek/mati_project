@@ -566,6 +566,7 @@ p {
 .slider {
     max-width: 1700px;
     margin: 0 auto;
+    margin-top: 64px;
     padding: 20px;
 }
 
@@ -714,6 +715,9 @@ p {
     }
     .review .text {
         max-width: 495px !important;
+    }
+    .head {
+        height: 48px !important;
     }
     .sliderContent h2 {
         margin-bottom: 16px;

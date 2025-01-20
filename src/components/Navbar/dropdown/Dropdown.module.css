@@ -7,11 +7,13 @@
 .container {
     background-color: rgba(252, 252, 247, 0.97);
     backdrop-filter: 8px;
-    position: absolute;
+    position: fixed;
     top: 70px;
     left: 0px;
     width: 100%;
     z-index: 1000 !important;
+    overflow-y: auto;
+    overscroll-behavior: contain;
 }
 
 .dropdown {
@@ -79,6 +81,7 @@
 @media only screen and (max-width: 850px) {
     .container {
         top: 50px;
+        max-height: calc(100vh - 50px);
     }
     .dropdown {
         width: 100%;

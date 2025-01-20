@@ -1,7 +1,7 @@
 import styles from './Navbar.module.css'
 import {Link, useLocation} from 'react-router-dom';
 import Dropdown from './dropdown/Dropdown.jsx'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import burgerMenu from '../../assets/burgerMenu.svg'
 import Logo from '../../assets/logos/temporaryLogo.png';
@@ -12,6 +12,14 @@ function Navbar() {
     const location = useLocation();
     const [dropdown, setDropdown] = useState(false);
 
+    useEffect(() => {
+        if (dropdown) {
+            document.body.style.overflow = 'hidden';
+        }
+        else {
+            document.body.style.overflow = 'auto';
+        }
+    }, [dropdown]);
 
     return(
         <div>
