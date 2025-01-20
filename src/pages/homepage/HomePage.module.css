@@ -178,7 +178,6 @@ p {
 @media (max-width: 1520px) {
     .heroImg {
         height: 100%;
-        width: auto;
     }
     .heroContainer {
         height: 500px; /* Wysokość dla dużych ekranów */

@@ -6,6 +6,7 @@
     --colorSub: #6E6F72;
     --colorDod: #2E6AA9;
     --formText: #0F1129;
+    overflow-x: hidden !important;
 }
 
 body {
