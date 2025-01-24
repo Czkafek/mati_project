@@ -7,7 +7,8 @@
 *- poprawienie kafelków oferty -> za mały tekst i grafika
 *- sprawdzenie marginów na kontakt
 *- sprawdzenie marginów na o nas
-- skończ menu - kiedy się w nie wejdzie da się je scrollować ale w tym samym momencien nie scrolluje się strona
+*- skończ menu - kiedy się w nie wejdzie da się je scrollować ale w tym samym momencien nie scrolluje się strona
 - zrób tak, żeby strona pojawiała się od początku, po przejściu na następną stronę
 - sprawdź w figmie rozwiązanie, żeby na mniejszych ekranach tekst i przycisk z hero znajdował się pod zdjęciem, a nie na zdjęciu
 - napisz do Mateusza co z tymi grafikami oraz dostępem do domeny
+- poprawienie przycisku na about
