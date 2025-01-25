@@ -1,5 +1,6 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, ScrollRestoration } from 'react-router-dom'
 import './App.css'
+import ScrollToTop from './components/ScrollToTop/ScrollToTop.jsx'
 import Navbar from './components/Navbar/Navbar.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import HomePage from './pages/homepage/HomePage.jsx'
@@ -10,6 +11,7 @@ function App() {
 
   return (
     <>
+      <ScrollToTop/>
       <Navbar/>
       <Routes>
         <Route path="/" element={<HomePage/>}/>
