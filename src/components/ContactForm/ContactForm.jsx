@@ -2,7 +2,7 @@ import styles from './ContactForm.module.css';
 import { useState, useRef } from 'react';
 import validator from 'validator';
 import emailjs from '@emailjs/browser';
-import arrowImg from '../../assets/Products/arrow.png'
+import arrowImg from '../../assets/arrowWhit.png'
 
 export default function ContactForm() {
     const [formData, setFormData] = useState({
