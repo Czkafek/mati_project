@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './About.module.css';
-
+import starsImg from '../../assets/50.png';
 const TestimonialCard = ({ review }) => {
     return (
         <div className={styles.review}>
@@ -8,7 +8,7 @@ const TestimonialCard = ({ review }) => {
                 <img src={review.image}  alt="" />
                 <p>{review.name}</p>
             </div>
-            <img src={`/src/assets/${review.rating}.png`} className={styles.stars} alt="" />
+            <img src={starsImg} className={styles.stars} alt="" />
             <p className={styles.text}>{review.text}</p>
         </div>
         );

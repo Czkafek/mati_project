@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { APIProvider } from '@vis.gl/react-google-maps';
 
 import happy_woman_img from '../../assets/happy_woman.jpg';
+import arrowImg from '../../assets/Products/arrow.png'
 import styles from './HomePage.module.css'
 
 import InfiniteSlider from '../../components/InfiniteSlider/InfiniteSlider';
@@ -88,7 +89,7 @@ function HomePage() {
                     <Link to="/onas" style={{ textDecoration: 'none' }}>
                         <p className={styles.hookDetails}>
                             Szczegóły
-                            <img src="/src/assets/Products/arrow.png" className={styles.arrow} />    
+                            <img src={arrowImg} className={styles.arrow} />    
                         </p>
                     </Link>
                 </div>

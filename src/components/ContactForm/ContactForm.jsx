@@ -2,6 +2,7 @@ import styles from './ContactForm.module.css';
 import { useState, useRef } from 'react';
 import validator from 'validator';
 import emailjs from '@emailjs/browser';
+import arrowImg from '../../assets/Products/arrow.png'
 
 export default function ContactForm() {
     const [formData, setFormData] = useState({
@@ -102,7 +103,7 @@ export default function ContactForm() {
                 {formData.success && <p className={styles.successMes} name="error">Wysłano email!</p>}
                 <button type="submit" className={styles.submitButton}>
                     Wyślij
-                    <img src="/src/assets/Products/arrowWhit.png" className={styles.arrow} alt="arrow" />
+                    <img src={arrowImg} className={styles.arrow} alt="arrow" />
                 </button>
             </form>
         </div>
