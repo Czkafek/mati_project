@@ -1,7 +1,7 @@
 import styles from './Product.module.css';
 
 import carImg from '../../assets/Products/car.jpg'
-import arrowImg from '../../assets/arrow.png'
+import arrowImg from '../../assets/Products/arrow.png'
 
 export default function Product({name, img, popular}) {
     console.log(img);
