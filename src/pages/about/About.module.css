@@ -260,9 +260,7 @@ p {
 }
 
 .hook .logo {
-    width: 444px;
-    height: 200px;
-    background-color: #c7c7c7;
+    width: 500px;
 }
 
 .hookContent {
@@ -288,12 +286,21 @@ p {
     }
 }
 
+@media (max-width: 1180px) {
+    .hook .logo {
+        width: 400px;
+    }
+}
+
 @media (max-width: 1024px) {
     .hook {
         margin-top: 96px;
         flex-direction: column;
         gap: 32px;
         padding: 0px 32px;
+    }
+    .hook .logo {
+        width: 424px;
     }
 }
 

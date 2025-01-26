@@ -3,6 +3,7 @@ import { APIProvider } from '@vis.gl/react-google-maps';
 
 import happy_woman_img from '../../assets/happy_woman.jpg';
 import arrowImg from '../../assets/Products/arrow.png'
+import MatiFullLogo from '../../assets/logos/MatiFullLogo2.png'
 import styles from './HomePage.module.css'
 
 import InfiniteSlider from '../../components/InfiniteSlider/InfiniteSlider';
@@ -82,17 +83,17 @@ function HomePage() {
                 </div>
         </div>
         <div className={styles.hook}>
-                <div className={styles.logo}></div>
-                <div className={styles.hookContent}>
-                    <h2>Poznaj nas!</h2>
-                    <p>W MATI wierzymy, że doświadczenie, indywidualne podejście i rodzinna atmosfera stanowią fundament solidnych relacji z naszymi klientami. Przez ponad dwie dekady angażujemy się w zapewnianie kompleksowej ochrony dla naszych klientów, co sprawia, że jesteśmy partnerem, któremu możesz zaufać.</p>
-                    <Link to="/onas" style={{ textDecoration: 'none' }}>
-                        <p className={styles.hookDetails}>
-                            Szczegóły
-                            <img src={arrowImg} className={styles.arrow} />    
-                        </p>
-                    </Link>
-                </div>
+            <img src={MatiFullLogo} className={styles.logo} />
+            <div className={styles.hookContent}>
+                <h2>Poznaj nas!</h2>
+                <p>W MATI wierzymy, że doświadczenie, indywidualne podejście i rodzinna atmosfera stanowią fundament solidnych relacji z naszymi klientami. Przez ponad dwie dekady angażujemy się w zapewnianie kompleksowej ochrony dla naszych klientów, co sprawia, że jesteśmy partnerem, któremu możesz zaufać.</p>
+                <Link to="/onas" style={{ textDecoration: 'none' }}>
+                    <p className={styles.hookDetails}>
+                        Szczegóły
+                        <img src={arrowImg} className={styles.arrow} />    
+                    </p>
+                </Link>
+            </div>
         </div>
         <ContactForm/>
     </>

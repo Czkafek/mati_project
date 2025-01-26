@@ -4,8 +4,7 @@ import Dropdown from './dropdown/Dropdown.jsx'
 import { useEffect, useState } from 'react';
 
 import burgerMenu from '../../assets/burgerMenu.svg'
-import Logo from '../../assets/logos/temporaryLogo.png';
-import moreIcon from '../../assets/MoreButton.svg'
+import Logo from '../../assets/logos/MatiSygnet.png'
 
 function Navbar() {
 
@@ -21,6 +20,8 @@ function Navbar() {
         }
     }, [dropdown]);
 
+    const isActive = (path) => location.pathname === path;
+
     return(
         <div>
             <div className={styles.computer}>
@@ -29,51 +30,12 @@ function Navbar() {
                 </Link>
                 <div className={styles.navigation}>
                     <div className={styles.verticalLine}></div>
-                    {
-                    /*
-                    <div className={styles.dropDownContainer}>
-                        <p className={styles.link}>Ubezpieczenia</p>
-                        <div className={styles.dropDown}>
-                            <div className={styles.dropDownCategory}>
-                                <h4 className={styles.dropDownTitle}>Majątek</h4>
-                                <Link to="/ubezpieczenie" className={styles.link}>Ubezpieczenie</Link>
-                                <Link to="/ubezpieczenie" className={styles.link}>Ubezpieczenie</Link>
-                                <Link to="/ubezpieczenie" className={styles.link}>Ubezpieczenie</Link>
-                                <Link to="/ubezpieczenie" className={styles.link}>Ubezpieczenie</Link>
-                            </div>   
-                            <div className={styles.dropDownCategory}>
-                                <h4 className={styles.dropDownTitle}>Majątek</h4>
-                                <Link to="/ubezpieczenie" className={styles.link}>Ubezpieczenie</Link>
-                                <Link to="/ubezpieczenie" className={styles.link}>Ubezpieczenie</Link>
-                                <Link to="/ubezpieczenie" className={styles.link}>Ubezpieczenie</Link>
-                                <Link to="/ubezpieczenie" className={styles.link}>Ubezpieczenie</Link>
-                            </div> 
-                            <div className={styles.dropDownCategory}>
-                                <h4 className={styles.dropDownTitle}>Majątek</h4>
-                                <Link to="/ubezpieczenie" className={styles.link}>Ubezpieczenie</Link>
-                                <Link to="/ubezpieczenie" className={styles.link}>Ubezpieczenie</Link>
-                                <Link to="/ubezpieczenie" className={styles.link}>Ubezpieczenie</Link>
-                                <Link to="/ubezpieczenie" className={styles.link}>Ubezpieczenie</Link>
-                            </div> 
-                            <div className={styles.dropDownCategory}>
-                                <h4 className={styles.dropDownTitle}>Majątek</h4>
-                                <Link to="/ubezpieczenie" className={styles.link}>Ubezpieczenie</Link>
-                                <Link to="/ubezpieczenie" className={styles.link}>Ubezpieczenie</Link>
-                                <Link to="/ubezpieczenie" className={styles.link}>Ubezpieczenie</Link>
-                                <Link to="/ubezpieczenie" className={styles.link}>Ubezpieczenie</Link>
-                            </div> 
-                        </div>
-                    </div>
-                    */}
                     <p className={styles.link} onMouseEnter={() => setDropdown(true)} onMouseLeave={() => setDropdown(false)} >
                         Ubezpieczenia
                     </p>
                     { dropdown && <Dropdown onMouseEnter={() => setDropdown(true)} onMouseLeave={() => setDropdown(false)} /> }
-                    <Link to="/onas" className={styles.link}>O nas</Link>
-                    <Link to="/kontakt" className={styles.link}>Kontakt</Link>
-
-                    
-
+                    <Link to="/onas" className={`${styles.link} ${isActive('/onas') ? styles.active : ''}`}>O nas</Link>
+                    <Link to="/kontakt" className={`${styles.link} ${isActive('/kontakt') ? styles.active : ''}`}>Kontakt</Link>
                 </div>
             </div>
                 

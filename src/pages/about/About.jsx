@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styles from './About.module.css';
 import happy_family_img from '../../assets/happy_family.jpg';
 import mati_wallpaper from '../../assets/mati_fb_wallpaper3.jpg';
+import MatiFullLogo from '../../assets/logos/MatiFullLogo2.png'
 import { reviews } from './reviews';
 import TestimonialCard from './TestimonialCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -29,11 +30,11 @@ function About() {
             </div>
         </div>
         <div className={styles.hook}>
-                <div className={styles.logo}></div>
-                <div className={styles.hookContent}>
-                    <h3>Poznaj nas!</h3>
-                    <p>W MATI wierzymy, że doświadczenie, indywidualne podejście i rodzinna atmosfera stanowią fundament solidnych relacji z naszymi klientami. Przez ponad dwie dekady angażujemy się w zapewnianie kompleksowej ochrony dla naszych klientów, co sprawia, że jesteśmy partnerem, któremu możesz zaufać.</p>
-                </div>
+            <img src={MatiFullLogo} className={styles.logo} />
+            <div className={styles.hookContent}>
+                <h3>Poznaj nas!</h3>
+                <p>W MATI wierzymy, że doświadczenie, indywidualne podejście i rodzinna atmosfera stanowią fundament solidnych relacji z naszymi klientami. Przez ponad dwie dekady angażujemy się w zapewnianie kompleksowej ochrony dla naszych klientów, co sprawia, że jesteśmy partnerem, któremu możesz zaufać.</p>
+            </div>
         </div>
         <div className={styles.teamContainer}>
             <h3>Poznaj nasz zespół</h3>

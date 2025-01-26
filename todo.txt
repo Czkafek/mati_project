@@ -10,6 +10,9 @@
 *- skończ menu - kiedy się w nie wejdzie da się je scrollować ale w tym samym momencien nie scrolluje się strona
 *- zrób tak, żeby strona pojawiała się od początku, po przejściu na następną stronę
 *- poprawienie przycisku na about
-- poprawić zdjęcia w testimonial carousel, w strzałkach szczegóły oraz wyślij oraz obraz produktów
+*- poprawić zdjęcia w testimonial carousel, w strzałkach szczegóły oraz wyślij oraz obraz produktów
+*- poprawienie navbaru (pogrubienie aktywnej strony)
+- wstawienie aktualnych zdjęć na about.jsx
+- po zmianie strony na mniejszych ekranach menu się wyłącza
+- zmienić .png i .jpg na .WebP lub .AVIF
 - sprawdź w figmie rozwiązanie, żeby na mniejszych ekranach tekst i przycisk z hero znajdował się pod zdjęciem, a nie na zdjęciu
-- napisz do Mateusza co z tymi grafikami oraz dostępem do domeny
