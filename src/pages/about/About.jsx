@@ -2,8 +2,11 @@ import { Link } from 'react-router-dom';
 
 import styles from './About.module.css';
 import happy_family_img from '../../assets/happy_family.jpg';
-import mati_wallpaper from '../../assets/mati_fb_wallpaper3.jpg';
+import interludeImg from '../../assets/interlude.jpg';
 import MatiFullLogo from '../../assets/logos/MatiFullLogo2.png'
+import irekImg from '../../assets/irek2.jpg'
+import sylwiaImg from '../../assets/sylwia2.jpg'
+import mateuszImg from '../../assets/mateusz.jpg'
 import { reviews } from './reviews';
 import TestimonialCard from './TestimonialCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -39,21 +42,21 @@ function About() {
         <div className={styles.teamContainer}>
             <h3>Poznaj nasz zespół</h3>
             <div className={styles.person}>
-                <div className={styles.img}></div>
+                <img src={irekImg} className={styles.img} />
                 <div className={styles.content}>
                     <h4>Irek</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
                 </div>
             </div>
             <div className={styles.person}>
-                <div className={styles.img}></div>
+                <img src={sylwiaImg} className={styles.img} />
                 <div className={styles.content}>
                     <h4>Sylwia</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
                 </div>
             </div>
             <div className={styles.person}>
-                <div className={styles.img}></div>
+                <img src={mateuszImg} className={styles.img} />
                 <div className={styles.content}>
                     <h4>Mateusz</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
@@ -61,7 +64,7 @@ function About() {
             </div>
         </div>
         <div className={styles.interludeContainer}>
-            <img src={mati_wallpaper} alt="" />
+            <img src={interludeImg} alt="" />
             <h3>Lata doświadczenia</h3>
             <p>Co roku nasz zespół uczęszcza w przeróżnych kursach, warsztatach, zajęciach, aby zwiększać swoje kompetencje w celu możliwości udzielenia profesjonalnej pomocy klientowi w każdej sytuacji, gdzie często te sytuacje są skomplikowane. Co roku nasz zespół uczęszcza w przeróżnych kursach, warsztatach, zajęciach, aby zwiększać swoje kompetencje w celu możliwości udzielenia profesjonalnej pomocy klientowi w każdej sytuacji, gdzie często te sytuacje są skomplikowane.</p>
         </div>
