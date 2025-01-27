@@ -20,6 +20,10 @@ function Navbar() {
         }
     }, [dropdown]);
 
+    useEffect(() => {
+        setDropdown(false);
+    }, [location.pathname])
+
     const isActive = (path) => location.pathname === path;
 
     return(
