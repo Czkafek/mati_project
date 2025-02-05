@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { APIProvider } from '@vis.gl/react-google-maps';
 
-import happy_woman_img from '../../assets/happy_woman.jpg';
+import happy_woman_img from '../../assets/happy_woman.webp';
 import arrowImg from '../../assets/Products/arrow.png'
 import MatiFullLogo from '../../assets/logos/MatiFullLogo2.png'
 import styles from './HomePage.module.css'
@@ -30,7 +30,7 @@ function HomePage() {
 
     return<>
         <div className={styles.heroContainer}>
-            <img src={happy_woman_img} className={styles.heroImg} alt="photo" />
+            <img src={happy_woman_img} className={styles.heroImg} alt="photo" loading='lazy' />
             <div className={styles.heroContent}>
                 <div className={styles.heroContentText}>
                     <h1 className={styles.heroTitle}>Zaufaj doświadczeniu</h1>
@@ -43,7 +43,7 @@ function HomePage() {
         </div>
         <div className={styles.coopContainer}>
             <h3>Współpracujemy z najlepszymi!</h3>
-            <InfiniteSlider/>
+            <InfiniteSlider loading='lazy'/>
         </div>
         <div className={styles.products}>
             <h2>Poznaj naszą ofertę:</h2>
@@ -83,14 +83,14 @@ function HomePage() {
                 </div>
         </div>
         <div className={styles.hook}>
-            <img src={MatiFullLogo} className={styles.logo} />
+            <img src={MatiFullLogo} className={styles.logo} loading='lazy' />
             <div className={styles.hookContent}>
                 <h2>Poznaj nas!</h2>
                 <p>W MATI wierzymy, że doświadczenie, indywidualne podejście i rodzinna atmosfera stanowią fundament solidnych relacji z naszymi klientami. Przez ponad dwie dekady angażujemy się w zapewnianie kompleksowej ochrony dla naszych klientów, co sprawia, że jesteśmy partnerem, któremu możesz zaufać.</p>
                 <Link to="/onas" style={{ textDecoration: 'none' }}>
                     <p className={styles.hookDetails}>
                         Szczegóły
-                        <img src={arrowImg} className={styles.arrow} />    
+                        <img src={arrowImg} className={styles.arrow} loading='lazy'/>    
                     </p>
                 </Link>
             </div>

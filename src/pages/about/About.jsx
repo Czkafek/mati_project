@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
 
 import styles from './About.module.css';
-import happy_family_img from '../../assets/happy_family.jpg';
-import interludeImg from '../../assets/interlude.jpg';
+import happy_family_img from '../../assets/happy_family.webp';
+import interludeImg from '../../assets/interlude.webp';
 import MatiFullLogo from '../../assets/logos/MatiFullLogo2.png'
-import irekImg from '../../assets/irek2.jpg'
-import sylwiaImg from '../../assets/sylwia2.jpg'
-import mateuszImg from '../../assets/mateusz.jpg'
+import irekImg from '../../assets/irek2.webp'
+import sylwiaImg from '../../assets/sylwia2.webp'
+import mateuszImg from '../../assets/mateusz.webp'
 import { reviews } from './reviews';
 import TestimonialCard from './TestimonialCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -20,7 +20,7 @@ function About() {
 
     return <>
         <div className={styles.heroContainer}>
-            <img src={happy_family_img} className={styles.heroImg} alt="photo" />
+            <img src={happy_family_img} className={styles.heroImg} loading='lazy' alt="photo" />
             <div className={styles.heroContent}>
                 <div className={styles.heroContentText}>
                     <h1 className={styles.heroTitle}>Ubezpieczenie dopasowane</h1>
@@ -33,7 +33,7 @@ function About() {
             </div>
         </div>
         <div className={styles.hook}>
-            <img src={MatiFullLogo} className={styles.logo} />
+            <img src={MatiFullLogo} loading='lazy' className={styles.logo} />
             <div className={styles.hookContent}>
                 <h3>Poznaj nas!</h3>
                 <p>W MATI wierzymy, że doświadczenie, indywidualne podejście i rodzinna atmosfera stanowią fundament solidnych relacji z naszymi klientami. Przez ponad dwie dekady angażujemy się w zapewnianie kompleksowej ochrony dla naszych klientów, co sprawia, że jesteśmy partnerem, któremu możesz zaufać.</p>
@@ -42,21 +42,21 @@ function About() {
         <div className={styles.teamContainer}>
             <h3>Poznaj nasz zespół</h3>
             <div className={styles.person}>
-                <img src={irekImg} className={styles.img} />
+                <img src={irekImg} className={styles.img} loading='lazy' />
                 <div className={styles.content}>
                     <h4>Irek</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
                 </div>
             </div>
             <div className={styles.person}>
-                <img src={sylwiaImg} className={styles.img} />
+                <img src={sylwiaImg} className={styles.img} loading='lazy' />
                 <div className={styles.content}>
                     <h4>Sylwia</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
                 </div>
             </div>
             <div className={styles.person}>
-                <img src={mateuszImg} className={styles.img} />
+                <img src={mateuszImg} className={styles.img} loading='lazy' />
                 <div className={styles.content}>
                     <h4>Mateusz</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
@@ -64,7 +64,7 @@ function About() {
             </div>
         </div>
         <div className={styles.interludeContainer}>
-            <img src={interludeImg} alt="" />
+            <img src={interludeImg} loading='lazy' alt="" />
             <h3>Lata doświadczenia</h3>
             <p>Co roku nasz zespół uczęszcza w przeróżnych kursach, warsztatach, zajęciach, aby zwiększać swoje kompetencje w celu możliwości udzielenia profesjonalnej pomocy klientowi w każdej sytuacji, gdzie często te sytuacje są skomplikowane. Co roku nasz zespół uczęszcza w przeróżnych kursach, warsztatach, zajęciach, aby zwiększać swoje kompetencje w celu możliwości udzielenia profesjonalnej pomocy klientowi w każdej sytuacji, gdzie często te sytuacje są skomplikowane.</p>
         </div>

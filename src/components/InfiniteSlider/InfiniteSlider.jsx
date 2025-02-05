@@ -30,22 +30,18 @@ export default function InfiniteSlider() {
     }, []);
 
 
-
-    
-
-
     return <Marquee className={styles.slider} autoFill="true" pauseOnHover="true" gradient="true" gradientWidth={gradientWidth}>
         <div>
-            <img src={alianzLogo} className={`${styles.slider_item} ${styles.slider_item1}`} />
+            <img src={alianzLogo} className={`${styles.slider_item} ${styles.slider_item1}`} loading='lazy' />
         </div>
         <div>
-            <img src={link4Logo} className={`${styles.slider_item} ${styles.slider_item2}`} />
+            <img src={link4Logo} className={`${styles.slider_item} ${styles.slider_item2}`} loading='lazy' />
         </div>
         <div>
-            <img src={pzuLogo} className={`${styles.slider_item} ${styles.slider_item3}`} />
+            <img src={pzuLogo} className={`${styles.slider_item} ${styles.slider_item3}`} loading='lazy' />
         </div>
         <div>
-            <img src={wartaLogo} className={`${styles.slider_item} ${styles.slider_item4}`} />
+            <img src={wartaLogo} className={`${styles.slider_item} ${styles.slider_item4}`} loading='lazy' />
         </div>
             </Marquee>
 }
