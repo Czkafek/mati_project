@@ -75,7 +75,7 @@ export default function ContactForm() {
 
     return (
         <div className={styles.ContactForm}>
-            <h2>Masz jakieś pytania?</h2>
+            <h2>Skontaktuj się z nami!</h2>
             <form onSubmit={handleSubmit} className={styles.form}>
                 <input
                     type="text"
