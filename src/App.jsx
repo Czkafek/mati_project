@@ -1,4 +1,4 @@
-import { Routes, Route, ScrollRestoration } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop.jsx'
 import Navbar from './components/Navbar/Navbar.jsx'
