@@ -1,7 +1,7 @@
 import styles from './InfiniteSlider.module.css';
 import { useState, useEffect } from 'react';
 
-import alianzLogo from '../../assets/wspolpracujacy/alianz.png';
+/*import alianzLogo from '../../assets/wspolpracujacy/alianz.png';
 import link4Logo from '../../assets/wspolpracujacy/link4.png';
 import pzuLogo from '../../assets/wspolpracujacy/pzu.png';
 import wartaLogo from '../../assets/wspolpracujacy/warta.png';
@@ -20,7 +20,27 @@ import tuzLogo from '../../assets/wspolpracujacy/tuz.webp'
 import uniqaLogo from '../../assets/wspolpracujacy/uniqa.png'
 import wienerLogo from '../../assets/wspolpracujacy/wiener.png'
 import youcandriveLogo from '../../assets/wspolpracujacy/youcandrive.svg'
-import interLogo from '../../assets/wspolpracujacy/inter.png'
+import interLogo from '../../assets/wspolpracujacy/inter.png'*/
+const alianzLogo = "/images/alianz.png";
+const link4Logo = "/images/link4.png";
+const pzuLogo = "/images/pzu.png";
+const wartaLogo = "/images/warta.png";
+const compensaLogo = "/images/compensa.png";
+const dallboggLogo = "/images/dallbogg.png";
+const ergohestiaLogo = "/images/ergohestia.webp";
+const generaliLogo = "/images/generali.webp";
+const hdiLogo = "/images/hdi.png";
+const interRiskLogo = "/images/InterRisk.avif";
+const leadenhallLogo = "/images/leadenhall.svg";
+const mtuLogo = "/images/mtu.webp";
+const proamaLogo = "/images/proama.png";
+const trastiLogo = "/images/trasti.svg";
+const tuwLogo = "/images/tuw.png";
+const tuzLogo = "/images/tuz.webp";
+const uniqaLogo = "/images/uniqa.png";
+const wienerLogo = "/images/wiener.png";
+const youcandriveLogo = "/images/youcandrive.svg";
+const interLogo = "/images/inter.png";
 import Marquee from 'react-fast-marquee';
 
 export default function InfiniteSlider() {
