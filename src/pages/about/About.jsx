@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import styles from './About.module.css';
-import happy_family_img from '../../assets/happy_family.webp';
+//import happy_family_img from '../../assets/happy_family.webp';
 import interludeImg from '../../assets/interlude.webp';
 import MatiFullLogo from '../../assets/logos/MatiFullLogo2.png'
 import irekImg from '../../assets/irek2.webp'

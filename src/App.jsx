@@ -6,8 +6,21 @@ import Footer from './components/Footer/Footer.jsx'
 import HomePage from './pages/homepage/HomePage.jsx'
 import About from './pages/about/About.jsx'
 import Contact from './pages/contact/Contact.jsx'
+import { useEffect } from 'react'
 
 function App() {
+
+  useEffect(() => {
+    const preloadImages = [
+      "/images/happy_family.webp"
+    ];
+
+    preloadImages.forEach(src => {
+      const img = new Image();
+      img.src = src;
+    });
+
+  }, [])
 
   return (
     <>
