@@ -18,9 +18,11 @@ import { SwiperNavButtons } from './SwiperNavButtons';
 
 function About() {
 
+    const heroImage = "/images/happy_family.webp";
+
     return <>
         <div className={styles.heroContainer}>
-            <img src={happy_family_img} className={styles.heroImg} loading='lazy' alt="photo" />
+            <img src={heroImage} className={styles.heroImg} loading='lazy' alt="photo" />
             <div className={styles.heroContent}>
                 <div className={styles.heroContentText}>
                     <h1 className={styles.heroTitle}>Ubezpieczenie dopasowane</h1>
